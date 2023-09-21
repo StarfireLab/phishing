@@ -1,0 +1,231 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+h1 {
+    font-weight: normal;
+  }
+  .main {
+    background: url("../images/new_login_background_1475f40.jpg") 50% 50%
+      no-repeat;
+    background-size: cover;
+    height: calc(50vw);
+    min-height: 675px;
+    max-height: calc(100vh - 92px);
+  }
+  .main .header {
+    width: 100%;
+    height: 60px;
+  }
+  .main .header .header_image {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main .header .header_image .email_logo {
+    display: inline-block;
+    width: 138px;
+    height: 21px;
+  }
+  .main .header .header_image .email_logo img {
+    width: 100%;
+    height: 100%;
+  }
+  .topLink {
+    width: 261px;
+    height: 22px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+    line-height: 22px;
+    vertical-align: middle;
+    float: right;
+  }
+  .topLink a,
+  .topLink span {
+    font-size: 13px;
+    color: #2b2b2b;
+    vertical-align: middle;
+  }
+  .main .loginWrap {
+    width: 100%;
+    height: 490px;
+  }
+  .main .loginWrap .loginWd {
+    width: 1000px;
+    height: 490px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left_text_wrap {
+    text-align: left;
+    margin-top: 230px;
+    width: 396px;
+  }
+  .left_text_wrap h1 {
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 34px;
+    line-height: 51px;
+  }
+  .main .loginWrap .loginWd .login {
+    background: #fff;
+    width: 340px;
+    height: 400px;
+    border-radius: 4px;
+    margin-top: 90px;
+    box-shadow: 0 10px 30px 0 rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+  }
+  .login_scan_panel_pwd_title {
+    margin: 0;
+    padding: 30px 28px 46px 28px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .signup_item_cheakbox {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+  .signup_item_login {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+  .signup_item_content {
+    position: relative;
+    width: 100%;
+    max-height: 48px;
+    border-radius: 2px;
+    display: table;
+    transition: all 0.3s ease 0s;
+  }
+  .login_scan_panel_pwd_input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    padding: 14px 10px;
+    font-size: 14px;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+    outline: none;
+    transition: all 0.3s ease 0;
+    height: 48px;
+  }
+  .signup_item {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+  }
+  .signup_item_content_login {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .login_scan_panel_auto_login {
+    float: left;
+    font-size: 12px;
+    color: #aaaaaa;
+  }
+  .login_scan_panel_pwd_checkbox {
+    margin: 0;
+    margin-right: 4px;
+  }
+  .login_scan_panel_forgot_pwd a {
+    font-size: 12px;
+    /* color: #4370cb; */
+    color: #186fd5;
+  }
+  .v_middle {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .login_btn {
+    border: none;
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    background: #2984ef;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    border-radius: 2px;
+  }
+  .login_btn:hover {
+    opacity: 0.7;
+  }
+  .signup_item_content input {
+    outline: none;
+  }
+  #inputuin:hover {
+    border: 1px solid #949494;
+  }
+  #pp:hover {
+    border: 1px solid #949494;
+  }
+  #inputuin:focus {
+    border: 1px solid #2984ef;
+  }
+  #pp:focus {
+    border: 1px solid #2984ef;
+  }
+  input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #fdfdfd inset;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+  }
+  .frame_foot_copyright {
+    margin-top: 18px;
+    line-height: 27px;
+    color: #828282;
+    text-align: center;
+    font-size: 12px;
+  }
+  .frame_foot_copyright a {
+    color: #828282;
+  }
+  .signup_item_content_tips_error{
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 8px;
+        font-size: 12px;
+        color: #F15A5A;
+        /* visibility: block; */
+        text-align: left;
+ 
+  }
+  .signup_item_content_tips_error2{
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 8px;
+        font-size: 12px;
+        color: #F15A5A;
+        /* visibility: hidden; */
+        text-align: left;
+ 
+  }
+  .active{
+      visibility: hidden;
+  }

